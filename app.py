@@ -14,11 +14,14 @@ def serve_manifest():
     print("Serving ai-plugin.json (no cache)...")
     response = make_response(send_from_directory(".well-known", "ai-plugin.json", mimetype="application/json"))
     response.headers["Cache-Control"] = "no-store"
+    response.headers["Access-Control-Allow-Origin"] = "*"  # <-- ADD THIS LINE
     return response
 
 @app.route("/openapi.json")
 def serve_openapi():
-    return send_from_directory(".", "openapi.json", mimetype="application/json")
+    response = make_response(send_from_directory(".", "openapi.json", mimetype="application/json"))
+    response.headers["Access-Control-Allow-Origin"] = "*"  # <-- ADD THIS LINE
+    return response
 
 @app.route("/tasks", methods=["GET"])
 def get_tasks():
