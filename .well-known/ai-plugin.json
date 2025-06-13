@@ -1,0 +1,14 @@
+{
+    "schema_version": "v1",
+    "name_for_model": "clickup_connector",
+    "name_for_human": "ClickUp Tasks",
+    "description_for_model": "Use this to fetch your task list from ClickUp.",
+    "description_for_human": "Connects to your ClickUp workspace and retrieves tasks.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:5000/openapi.json"
+    }
+  }

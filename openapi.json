@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "ClickUp Connector",
+      "version": "1.0.0",
+      "description": "Fetches tasks from your ClickUp account"
+    },
+    "paths": {
+      "/tasks": {
+        "get": {
+          "operationId": "getTasks",
+          "summary": "Fetch tasks from ClickUp",
+          "responses": {
+            "200": {
+              "description": "A list of tasks from your ClickUp list"
+            }
+          }
+        }
+      }
+    }
+  }
