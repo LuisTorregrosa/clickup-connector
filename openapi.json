@@ -1,5 +1,5 @@
 {
-    "openapi": "3.0.1",
+    "openapi": "3.1.0",
     "info": {
       "title": "ClickUp Connector",
       "version": "1.0.0",
@@ -7,7 +7,7 @@
     },
     "servers": [
       {
-        "url": "https://clickup-connector.onrender.com"
+        "url": "https://clickup-connector.onrender.com/"
       }
     ],
     "paths": {
