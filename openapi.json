@@ -5,6 +5,12 @@
       "version": "1.0.0",
       "description": "Fetches tasks from your ClickUp account"
     },
+    "servers": [
+      {
+        "url": "https://clickup-connector.onrender.com",
+        "description": "Render deployment"
+      }
+    ],
     "paths": {
       "/tasks": {
         "get": {
