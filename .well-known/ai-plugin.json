@@ -9,6 +9,6 @@
     },
     "api": {
       "type": "openapi",
-      "url": "http://localhost:5000/openapi.json"
+      "url": "https://clickup-connector.onrender.com/openapi.json"
     }
   }
