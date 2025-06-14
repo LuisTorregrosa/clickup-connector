@@ -23,6 +23,14 @@ def serve_openapi():
     response.headers["Access-Control-Allow-Origin"] = "*"  # <-- ADD THIS LINE
     return response
 
+@app.route("/.well-known/mcp.json")
+def serve_mcp():
+    response = make_response(
+        send_from_directory(".well-known", "mcp.json", mimetype="application/json")
+    )
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    return response
+
 @app.route("/tasks", methods=["GET"])
 def get_tasks():
     headers = {
