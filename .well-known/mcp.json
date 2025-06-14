@@ -1,0 +1,15 @@
+{
+    "schema_version": "mcp-1.0",
+    "id": "clickup-connector",
+    "name": "ClickUp Tasks Connector",
+    "description": "Read tasks from a ClickUp list via REST API.",
+    "servers": [
+      { "url": "https://clickup-connector.onrender.com/" }
+    ],
+    "api_spec": {
+      "type": "openapi",
+      "url": "https://clickup-connector.onrender.com/openapi.json"
+    },
+    "auth": { "type": "none" },
+    "capabilities": ["read.tasks"]
+  }
